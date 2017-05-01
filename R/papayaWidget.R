@@ -70,7 +70,7 @@ papayaWidget <- function(
 #' @name papayaWidget-shiny
 #'
 #' @export
-papayaWidgetOutput <- function(outputId, width = '100%', height = '1200px'){
+papayaWidgetOutput <- function(outputId, width = '100%', height = '400px'){
   htmlwidgets::shinyWidgetOutput(outputId, "papayaWidget", width,
                                  height, package = "papayaWidget")
 }
