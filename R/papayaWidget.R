@@ -77,7 +77,7 @@ papayaWidgetOutput <- function(outputId, width = '100%', height = '400px'){
 
 #' @rdname papayaWidget-shiny
 #' @export
-renderPapayaWidget <- function(expr, env = parent.frame(), quoted = FALSE) {
+renderPapayaWidget <- function(expr, env = parent.frame(n=3), quoted = FALSE) {
   if (!quoted) { expr <- substitute(expr) } # force quoted
   htmlwidgets::shinyRenderWidget(expr, papayaWidgetOutput, env, quoted = TRUE)
 }
