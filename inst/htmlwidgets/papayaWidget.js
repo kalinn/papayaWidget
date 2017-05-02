@@ -7,6 +7,9 @@ HTMLWidgets.widget({
   factory: function(el, width, height) {
 
     // TODO: define shared variables for this instance
+  
+    // create our object and bind it to the element
+    var pw = new papayaWidget(el.id);
 
     return {
 
@@ -23,15 +26,16 @@ HTMLWidgets.widget({
             break;
         default:
       }
-       document.getElementById(el.id).innerHTML += '<div class="papaya" data-params="params'+el.id+'"></div>';
-
-      },
+      
+      document.getElementById(el.id).innerHTML += '<div class="papaya" data-params="params'+el.id+'"></div>';
 
       resize: function(width, height) {
 
         // TODO: code to re-render the widget with a new size
 
       }
+
+      p: pw
 
     };
   }
