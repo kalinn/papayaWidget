@@ -7,7 +7,7 @@ HTMLWidgets.widget({
   factory: function(el, width, height) {
 
     // TODO: define shared variables for this instance
-  
+
     return {
 
       renderValue: function(x) {
@@ -23,8 +23,9 @@ HTMLWidgets.widget({
             break;
         default:
       }
-      
-      document.getElementById(el.id).innerHTML += '<div class="papaya" data-params="params'+el.id+'"></div>';
+       document.getElementById(el.id).innerHTML += '<div class="papaya" data-params="params'+el.id+'"></div>';
+
+      },
 
       resize: function(width, height) {
 
