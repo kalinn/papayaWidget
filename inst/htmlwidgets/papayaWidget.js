@@ -8,9 +8,6 @@ HTMLWidgets.widget({
 
     // TODO: define shared variables for this instance
   
-    // create our object and bind it to the element
-    var pw = new papayaWidget(el.id);
-
     return {
 
       renderValue: function(x) {
@@ -34,8 +31,6 @@ HTMLWidgets.widget({
         // TODO: code to re-render the widget with a new size
 
       }
-
-      p: pw
 
     };
   }
